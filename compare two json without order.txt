@@ -1,0 +1,9 @@
+How to compare two json have the same properties without oorder?
+var obj1={name:"person 1",age:5};
+var obj2={age:5, name:"person 1"};
+
+var _ = require('lodash');
+_.isEqual({a:1, b:2}, {b:2, a:1});  //true
+ 
+var_=require(lodash');
+-.isEqual({name:"person 1",age:5},{age:5,name:"person"});  //true

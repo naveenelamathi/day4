@@ -1,0 +1,13 @@
+var request= new XMLHttpRequest();
+request.open('GET','http://api.countrylayer.com/v2/all?access_key=bfd17afdb3ddb9705f2d2e502a1dbbca');
+request.send();
+request.onload = function(){
+    var countrylayer = JSON.parse(this.responseText);
+   for(let element of countrylayer){
+        console.log(element.name);
+     console.log(element.capital);
+     console.log(element.alpha2Code);
+     console.log(element.region);
+    }
+    
+} 

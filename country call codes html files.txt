@@ -1,0 +1,3 @@
+<html>
+    <script src="country callcodes.js"></script>
+</html>
